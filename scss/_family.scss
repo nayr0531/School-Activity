@@ -1,0 +1,82 @@
+.family-content {
+  background: #87a11a;
+
+  h1 {
+    background: rgba(#88c9e5, 0.9);
+    padding: 0.5rem 3rem;
+    color: #ffffff;
+  }
+
+  a {
+    text-decoration: none;
+    position: relative;
+    left: 1rem;
+    button {
+      ion-icon {
+        font-size: 2rem;
+      }
+      gap: 0.3rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(#87a11a, 0.9);
+      transition: all 0.3s ease-out;
+      font-size: 1.2rem;
+      color: #ffffff;
+      margin: 1rem 0rem;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.3rem;
+      box-shadow: -0.1rem 0.1rem 0.1rem 0rem rgba(#000000, 0.1);
+      &:hover {
+        background: rgba(#87a11a, 1);
+      }
+    }
+  }
+  .h-btn {
+    button {
+      background: rgba(#88c9e5, 0.7);
+      &:hover {
+        background: rgba(#88c9e5, 0.9);
+      }
+    }
+  }
+  .family-members {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    .member {
+      background: rgba(#88c9e5, 0.7);
+      width: 20rem;
+      margin: 0rem 1rem;
+      transition: all 0.3s ease-out;
+      border-radius: 0.5rem;
+      height: 36rem;
+      &:hover {
+        background: rgba(#88c9e5, 1);
+        img {
+          filter: brightness(1);
+        }
+      }
+      img {
+        width: 20rem;
+        height: 25rem;
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+        filter: brightness(0.5);
+        transition: all 0.3s ease-out;
+      }
+      P {
+        padding: 0rem 1rem;
+        color: #323232;
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+      }
+      h2 {
+        color: #ffffff;
+        padding: 0.1rem 1rem;
+      }
+    }
+  }
+}

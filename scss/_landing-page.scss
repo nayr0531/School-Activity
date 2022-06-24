@@ -1,0 +1,128 @@
+.landing-page {
+  width: 100vw;
+  height: 100vh;
+  background: url("../Assets/bg.jpg") center no-repeat;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  .subtitle {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    p {
+      color: #ffffff;
+      font-size: 2rem;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: -15rem;
+    bottom: -9rem;
+    background: url("../Assets/mountain.png") no-repeat;
+    background-size: cover;
+    width: 50rem;
+    height: 50rem;
+    z-index: 2;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    right: -15rem;
+    bottom: -9rem;
+    background: url("../Assets/mountain.png") no-repeat;
+    background-size: cover;
+    width: 50rem;
+    height: 50rem;
+    z-index: 2;
+  }
+  img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .name {
+    width: 70rem;
+    height: 20rem;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: animateName infinite 10s linear;
+  }
+  @keyframes animateName {
+    0% {
+      left: -50%;
+    }
+    100% {
+      left: 150%;
+    }
+  }
+  .sun {
+    position: absolute;
+    right: -3rem;
+    top: -3rem;
+    width: 25rem;
+    height: 25rem;
+    z-index: 2;
+  }
+  .clouds {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    animation: animateName infinite 20s linear;
+    img {
+      height: 10rem;
+      width: 15rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: -50%;
+      top: 70%;
+      background: url("../Assets/cloud.png") no-repeat;
+      background-size: cover;
+      width: 10rem;
+      height: 10rem;
+      z-index: 2;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: -120%;
+      top: 0;
+      background: url("../Assets/cloud.png") no-repeat;
+      background-size: cover;
+      width: 10rem;
+      height: 10rem;
+      z-index: 2;
+    }
+  }
+  .icons {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, 50%);
+    z-index: 3;
+    display: flex;
+    animation: boundIcon infinite 5s ease-in-out;
+    img {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+  @keyframes boundIcon {
+    0% {
+      bottom: 20%;
+    }
+    50% {
+      bottom: 25%;
+    }
+    100% {
+      bottom: 20%;
+    }
+  }
+}

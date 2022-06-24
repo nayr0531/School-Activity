@@ -1,0 +1,94 @@
+.user-content {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #87a11a;
+  h1 {
+    padding: 0.5rem 3rem;
+    color: #ffffff;
+    background: #88c9e5;
+  }
+  .button {
+    background: rgba(#88c9e5, 0.7);
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem 3rem;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    color: #595959;
+    &:hover {
+      background: rgba(#88c9e5, 0.9);
+    }
+    a {
+      text-decoration: none;
+      button {
+        gap: 0.3rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(#87a11a, 0.9);
+        transition: all 0.3s ease-out;
+        font-size: 1.2rem;
+        color: #ffffff;
+        margin: 1rem 0rem;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        box-shadow: -0.1rem 0.1rem 0.1rem 0rem rgba(#000000, 0.1);
+        &:hover {
+          background: rgba(#87a11a, 1);
+        }
+      }
+    }
+  }
+  .details {
+    width: 50%;
+    margin: 5rem auto;
+    background: #88c9e5;
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: -0.1rem 0.1rem 0.1rem 0rem rgba(#000000, 0.1);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+
+    img {
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      border-radius: 50%;
+      width: 8rem;
+      height: 8rem;
+      border: 0.3rem solid #88c9e5;
+      filter: brightness(0.8);
+      transition: all 0.3s ease-out;
+      &:hover {
+        filter: brightness(1);
+      }
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 2.8rem;
+      &:last-child {
+        margin-bottom: 5rem;
+      }
+    }
+
+    p {
+      width: 50%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      color: #595959;
+      font-size: 1.2rem;
+      transition: all 0.3s ease-out;
+      &:hover {
+        background: #87a11a;
+      }
+    }
+  }
+}
